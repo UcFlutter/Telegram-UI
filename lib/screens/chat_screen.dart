@@ -36,7 +36,7 @@ class People extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.separated(
-      separatorBuilder: (BuildContext context, int index) => Divider(
+      separatorBuilder: (BuildContext context, int index) => const Divider(
         indent: 60,
         thickness: 1.0,
       ),
