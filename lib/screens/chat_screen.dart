@@ -22,7 +22,9 @@ class ChatScreen extends StatelessWidget {
       ),
       body: const People(),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.pushNamed(context, '/selectUserScreen');
+        },
         backgroundColor: Colors.blue.shade300,
         child: const Icon(Icons.auto_fix_high),
       ),
@@ -37,7 +39,7 @@ class People extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView.separated(
       separatorBuilder: (BuildContext context, int index) => const Divider(
-        indent: 60,
+        indent: 80,
         thickness: 1.0,
       ),
       itemCount: 20,
